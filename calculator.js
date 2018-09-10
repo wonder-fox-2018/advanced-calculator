@@ -33,7 +33,7 @@ class Calculator {
     return this
   }
   circle(){
-    this.result =  2 * 3.14 * this.result
+    this.result =  2 * Math.PI * this.result
     return this
   }
 
@@ -48,9 +48,6 @@ class Calculator {
 */
 
 
-var count  = new Calculator(5).add(5).add(5).subtract(5).multiply(10).divide(10).square(2).squareRoot().circle()
-
-console.log(count.result);
 
 
 
