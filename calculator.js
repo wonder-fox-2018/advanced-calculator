@@ -1,29 +1,44 @@
 'use strict'
 
 class Calculator {
-  //write your code here
   constructor () {
+    this.result = 0
   }
-  add () {
+  add (num) {
+    this.result+=num
+    return this
   }
-  subtract () {
+  subtract (num) {
+    this.result-= num
+    return this
   }
-  multiply () {
+  multiply (num) {
+    this.result*= num
+    return this
   }
-  divide () {
+  divide (num) {
+    this.result/=num
+    return this
   }
-  square () {
+  square (num) {
+    Math.pow(this.result, num)
+    return this
   }
   squareRoot () {
+    Math.sqrt(this.result)
+    return this
+  }
+  reset(){
+    this.result = 0
+    return this
+  }
+  show(){
+    console.log(this.result)
   }
 }
 
-/** note : you can use several features from ecmascript, such as:
-* - Classes
-* - Default Parameters
-* - Destructured Assignment
-* - Template Literals
-* - Method Chaining
-*/
+// let calculator = new Calculator()
+// calculator.add(10).subtract(2).show()
 
+//-> main.js
 module.exports = Calculator
