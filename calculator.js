@@ -3,18 +3,42 @@
 class Calculator {
   //write your code here
   constructor () {
+    this.hasil = 0;
   }
-  add () {
+
+  angkaAwal(input) {
+    this.hasil += input;
+    return this;
   }
-  subtract () {
+
+  add (input) {
+    this.hasil += input;
+    return this;
   }
-  multiply () {
+
+  subtract (input) {
+    this.hasil -= input;
+    return this;
   }
-  divide () {
+
+  multiply (input) {
+    this.hasil *= input;
+    return this;
   }
-  square () {
+
+  divide (input) {
+    this.hasil /= input;
+    return this;
   }
+
+  square (input) {
+    this.hasil = Math.pow(this.hasil,input);
+    return this;
+  }
+
   squareRoot () {
+    this.hasil = Math.PI;
+    return this;
   }
 }
 
