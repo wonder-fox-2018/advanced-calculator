@@ -25,7 +25,12 @@ class Calculator {
     return this
   }
   squareRoot () {
-    Math.sqrt(this.result)
+    this.num = Math.sqrt(this.num)
+    return this
+  }
+  circleArea() {
+    const pi = Math.PI
+    this.num = pi * this.square().num
     return this
   }
   reset(){
